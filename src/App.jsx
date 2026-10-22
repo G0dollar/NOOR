@@ -9,7 +9,7 @@ import OrganizerPage from "./pages/OrganizerPage";
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/senior" element={<SeniorLayout />} />
